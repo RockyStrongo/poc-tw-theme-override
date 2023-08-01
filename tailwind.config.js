@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -7,10 +10,12 @@ module.exports = {
     './node_modules/test-tw-components/dist/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    colors: {
-      primary: "green",
-      secondary: "blue",
-    },
+      colors: {
+        blue: "#00FFFF",
+        yellow: "#FFFF00",
+        primary: 'var(--primary)',
+        secondary: 'var(--secondary)',
+      },
     plugins: [],
   }
 }

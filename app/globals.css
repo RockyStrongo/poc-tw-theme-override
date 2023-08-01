@@ -1,10 +1,14 @@
-:root {
-  --color-primary: "#4cb33e";
-  --color-secondary: "#fb235f";
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
+.theme-1 {
+  --primary: theme(colors.blue);
+  --secondary: theme(colors.yellow);
+}
+
+.theme-2 {
+  --primary: theme(colors.yellow);
+  --secondary: theme(colors.blue);
+}
